@@ -26,6 +26,10 @@ It allows resolution for nested objects, converting a string in dot notation int
 ```
 yarn add graphql-directive-resolve-as
 ```
+or
+```
+npm i graphql-directive-resolve-as
+```
 
 # Usage
 
