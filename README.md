@@ -10,7 +10,7 @@
 Graphql directive to resolve fields as different prop names of the belonging object.
 
 This directive helps you not to declare resolvers over and over
-just because the name you wanna expose is different to the prop name.
+just because the name you want to expose is different to the prop name.
 
 It allows resolution for nested objects, converting a string in dot notation into an object reference.
 
