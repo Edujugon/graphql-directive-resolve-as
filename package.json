@@ -1,6 +1,6 @@
 {
   "name": "graphql-directive-resolve-as",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Graphql directive to resolve fields as different prop names of the belonging object",
   "main": "src/index.js",
   "scripts": {
@@ -9,6 +9,14 @@
     "lint": "eslint . --ignore-path .gitignore"
   },
   "keywords": ["graphql", "directive", "rename field", "resolves as"],
+  "homepage": "https://github.com/Edujugon/graphql-directive-resolve-as",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Edujugon/graphql-directive-resolve-as"
+  },
+  "bugs": {
+    "url": "https://github.com/Edujugon/graphql-directive-resolve-as/issues"
+  },
   "author": "Eduardo Marcos <edujugon@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
