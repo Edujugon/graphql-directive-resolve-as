@@ -1,6 +1,6 @@
 {
   "name": "graphql-directive-resolve-as",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Graphql directive to resolve fields as different prop names of the belonging object",
   "main": "src/index.js",
   "scripts": {
