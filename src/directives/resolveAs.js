@@ -6,7 +6,7 @@ const {
 } = require('graphql');
 
 class ResolveAs extends SchemaDirectiveVisitor {
-  static getDirectiveDeclaration(directiveName = 'resolve_as') {
+  static getDirectiveDeclaration(directiveName = 'resolveAs') {
     return new GraphQLDirective({
       name: directiveName,
       locations: [DirectiveLocation.FIELD_DEFINITION],
@@ -21,9 +21,7 @@ class ResolveAs extends SchemaDirectiveVisitor {
   visitFieldDefinition(field) {
     const { name } = this.args;
 
-    field.resolve = source => {
-      return name.split('.').reduce((o,i)=>o[i], source);
-    }
+    field.resolve = source => name.split('.').reduce((o, i) => o[i], source);
   }
 }
 

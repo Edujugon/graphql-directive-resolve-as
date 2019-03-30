@@ -40,7 +40,7 @@ const schema = makeExecutableSchema({
   typeDefs,
   resolvers,
   schemaDirectives: {
-    resolve_as: resolveAs,
+    resolveAs,
     ...
   },
 });
@@ -53,8 +53,8 @@ const typeDefs = `
   type User {
     name: String @resolve_as(name: "firstName")
     lastName: String,
-    city: String @resolve_as(name: "country.city.name")
-    firstFriend: String @resolve_as(name: "friends.0.name")
+    city: String @resolveAs(name: "country.city.name")
+    firstFriend: String @resolveAs(name: "friends.0.name")
   }
   type Query {
     me: User
@@ -94,7 +94,7 @@ const resolvers = {
 > if you use [`graphql-import`](https://github.com/prismagraphql/graphql-import) then you need to add this definition on top of the schema:
 
 ```graphql
-directive @resolve_as(name: String) on FIELD_DEFINITION
+directive @resolveAs(name: String) on FIELD_DEFINITION
 ```
 
 # Directive Parameters

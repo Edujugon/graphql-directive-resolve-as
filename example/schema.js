@@ -3,12 +3,12 @@ const { resolveAs } = require('../src/index');
 
 const typeDefs = `
   type User {
-    name: String @resolve_as(name: "firstName")
+    name: String @resolveAs(name: "firstName")
     lastName: String,
-    country: String @resolve_as(name: "country.name")
-    city: String @resolve_as(name: "country.city.name")
-    neighborhood: String @resolve_as(name: "country.city.neighborhood.name")
-    firstFriend: String @resolve_as(name: "friends.0.name")
+    country: String @resolveAs(name: "country.name")
+    city: String @resolveAs(name: "country.city.name")
+    neighborhood: String @resolveAs(name: "country.city.neighborhood.name")
+    firstFriend: String @resolveAs(name: "friends.0.name")
   }
   type Query {
     me: User
@@ -45,6 +45,6 @@ module.exports = makeExecutableSchema({
   typeDefs,
   resolvers,
   schemaDirectives: {
-    resolve_as: resolveAs,
+    resolveAs,
   },
 });

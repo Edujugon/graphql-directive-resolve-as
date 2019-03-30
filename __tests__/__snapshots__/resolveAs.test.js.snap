@@ -16,7 +16,7 @@ GraphQLDirective {
   "locations": Array [
     "FIELD_DEFINITION",
   ],
-  "name": "resolve_as",
+  "name": "resolveAs",
 }
 `;
 
